@@ -1,3 +1,12 @@
+ ## Steps to Regenerate this project
+ 
+ * Download the repository
+ * Go to `Word Guessing Game` folder
+ * Run `npm install` and the application will be ready to use
+ * Run `node server.js` which will begin the server
+ * Open 'http://localhost:3000' in browser
+ 
+
  ## Goal and Requirements
 
 The application is a game to guess a word.
@@ -72,12 +81,4 @@ If `words.js` has the words "TEA, EAT, TEE, PEA, PET, APE" and the game selects 
 * tee will respond with 2 matches and increment the turn counter then allow a new guess
 * EAT will respond with 3 matches and increment the turn counter then allow a new guess
 * TEA will respond that they have won the game in however many turns and allow them to start a new game with a new randomly selected word from the list
-
-## Steps to Regenerate this project
- 
- * Download the repository
- * Go to `Word Guessing Game` folder
- * Run `npm install` and the application will be ready to use
- * Run `node server.js` which will begin the server
- * Open 'http://localhost:3000' in browser
 
