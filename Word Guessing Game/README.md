@@ -17,12 +17,39 @@ The User will enter a word, and the page will do one of:
 * The game will show effort to make it visually attractive and usable.
 
 ### Logic
-* The game will use a `words.js` that exports an array of valid words.  
+* The game will use a `words.js` that exports an array of valid words.
+
+ `const wordList = [ 'START', 'TREES', 'TREAT', 'STARS', 'TRAPS', 'PARTS',
+    'STRAP', 'STARK', 'CARTS', 'SPREE', 'TARPS', 'TARTS',
+    'CRASH', 'TRASH', 'SHARP', 'HARPS', 'CRUSH', 'RUSTS',
+    'RESTS', 'STEER', 'STARE', 'TRACK', 'THESE', 'TRUCK' ]
+    
+module.exports = wordList;`
+
 * The game will work if this file is replaced by a different list of words.  All words in any version of the file will be the same length as the other words in that file.
 * The words.js file should ONLY export an array of valid words
   * ONLY.  Any other word logic should be in a different file.
 * The game will not care about case-sensitivity.  The game will call a letter a match, even if the letter is in a different position in the word (see "Examples" below)
+
+ `function compare( word, guess ) {  
+    let match = 0;
+    const letterCount = {};
+
+    for( let letter of word.toLowerCase() ) {
+        letterCount[letter] = letterCount + 1 || 1;
+    }
+    for( let letter of guess.toLowerCase() ) {
+        if( letterCount[letter] ) {
+            letterCount[letter] -= 1;
+            match += 1;
+        }
+    }
+    return match;
+}`
+
 * The server will console.log the current secret word at the start of a game with a given game id.  The client should never know the secret word until it is guessed. 
+
+
   * Hint: the server should send a random id to the client.  The server will be able to match the id to a word, but the client should not be able to.
   * Hint: The page will have to send this same secret id to the server on every request. This can be done with a hidden input field or a query parameter.
 * The game must be runnable via: `npm install` and then `node server.js` and then going to `http://localhost:3000`
