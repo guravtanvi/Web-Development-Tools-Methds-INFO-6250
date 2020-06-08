@@ -1,19 +1,6 @@
-# Exam 1
+ ## Goal and Requirements
 
-* Start from the up-to-date master branch (`git checkout master; git pull origin master`)
-* Create a feature branch named 'exam1' (`git checkout -b exam1`)
-* Modify the `questions.md` file to have the answers required
-* Add a `server.js`, a `words.js` and any other files necessary to create the multiple page web application below
-* Add, commit, and push the branch to github
-* Create a PR to merge to master
-* Be sure to include the reviewer(s).  
-* Due by 11:59pm (PT) Sun Jun 7  
-
-## Goal and Requirements
-
-* Did you remember the above requirement about `questions.md`?
-
-The application will be a game to guess a word.
+The application is a game to guess a word.
 
 The User will enter a word, and the page will do one of:
 * Say the word is not one of the permitted words and allow them to enter a new word
@@ -55,29 +42,11 @@ If `words.js` has the words "TEA, EAT, TEE, PEA, PET, APE" and the game selects 
 * EAT will respond with 3 matches and increment the turn counter then allow a new guess
 * TEA will respond that they have won the game in however many turns and allow them to start a new game with a new randomly selected word from the list
 
-## Allowances
-* You may reuse files or parts of files from previous assignments - but they will be graded by the criteria here!
-* You may create your HTML as you see fit, but it must be fundamentally semantically valid and other best practices from class
-* You may create the CSS as you see fit but you must follow the best practices given in class
-* You may add icons and background images but there is no requirement to do so
-
-## Restrictions
-* You should use `express` module only
-* You must add additional JS files (server-side ONLY) that YOU write to uphold the idea of separation of concerns
-* You must use the correct HTTP methods (GET for loading pages, POST for adding content)
-* Reloading a page should not trigger a POST (use a redirect)
-* Do not use external JS other than base express 
-* Do not use external CSS libraries
-* You may not use floats to do more than manage flowing text with images
-* You may not use HTML tables or CSS table layouts
-* You may NOT use client-side/browser-side Javascript
-* Do not have any files in your PR except for the exam (no files from other assignments, for example)
-* Do not use var
-* Do not use alert
-* Do not use poor or unclear variable names
-* Do not have functions that are too big/do too much
-* Do not have console.log messages or commented out code
-* Do not use localStorage
-* Do not use meta tag refreshes
-* Do not use CSS preprocessors, minifiers, or other tools to modify your CSS
+## Steps to Regenerate this project
+ 
+ * Download the repository
+ * Go to `Word Guessing Game` folder
+ * Install express `npm install express`
+ * Run `node server.js` which will begin the server
+ * Open 'http://localhost:3000' in browser
 
