@@ -74,7 +74,7 @@ If `words.js` has the words "TEA, EAT, TEE, PEA, PET, APE" and the game selects 
  
  * Download the repository
  * Go to `Word Guessing Game` folder
- * Install express `npm install express`
+ * Run `npm install` and the application will be ready to use
  * Run `node server.js` which will begin the server
  * Open 'http://localhost:3000' in browser
 
