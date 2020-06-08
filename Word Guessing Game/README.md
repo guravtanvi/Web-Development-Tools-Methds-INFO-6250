@@ -16,7 +16,7 @@ The User will enter a word, and the page will do one of:
   * This list will be scrollable if it cannot fit in the space available
 * The game will show effort to make it visually attractive and usable.
 
-       ![Image](MainPage.png)
+![Image](MainPage.png)
 
 
 ### Logic
@@ -52,7 +52,7 @@ The User will enter a word, and the page will do one of:
 
 * The server will console.log the current secret word at the start of a game with a given game id.  The client should never know the secret word until it is guessed. 
 
-        ![Image](Commandline.png)
+![Image](Commandline.png)
 
   * Hint: the server should send a random id to the client.  The server will be able to match the id to a word, but the client should not be able to.
   * Hint: The page will have to send this same secret id to the server on every request. This can be done with a hidden input field or a query parameter.
