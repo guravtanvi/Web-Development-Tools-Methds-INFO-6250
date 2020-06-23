@@ -46,7 +46,6 @@ The User will enter a word, and the page will do one of:
  `function compare( word, guess ) {  
     let match = 0;
     const letterCount = {};
-
     for( let letter of word.toLowerCase() ) {
         letterCount[letter] = letterCount + 1 || 1;
     }
