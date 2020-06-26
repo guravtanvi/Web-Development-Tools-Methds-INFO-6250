@@ -45,8 +45,7 @@ The User will enter a word, and the page will do one of:
 
  `function compare( word, guess ) {  
     let match = 0;
-    const letterCount = {};
-    
+    const letterCount = {}; 
     for( let letter of word.toLowerCase() ) {
         letterCount[letter] = letterCount + 1 || 1;
     }
@@ -56,8 +55,7 @@ The User will enter a word, and the page will do one of:
             match += 1;
         }
     }
-    return match;
-}`
+    return match; }`
 
 * The server will console.log the current secret word at the start of a game with a given game id.  The client should never know the secret word until it is guessed. 
 
