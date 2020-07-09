@@ -1,4 +1,4 @@
-# Exam 2
+# Recipe Single-Page-Application
 
 * start from the up-to-date master branch (`git checkout master; git pull origin master`)
 * Create a feature branch named 'exam2' (`git checkout -b exam2`)
