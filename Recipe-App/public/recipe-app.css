@@ -1,0 +1,71 @@
+body {
+  background-image: url('background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header-panel {
+    background-color: black;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.container-panel {
+    background-color: rgb(49, 49, 49);
+    opacity: 80%;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.display-title {
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+.recipe-title {
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+}
+
+
+button {
+    background-color: ivory;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: black;
+}
+
+input {
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    border: black;
+}
+
+textarea {
+    font-family: sans-serif;
+}
+
+.welcome {
+    padding-bottom: 10px;
+}
+
+.recipe-list {
+    text-decoration: underline;
+}
