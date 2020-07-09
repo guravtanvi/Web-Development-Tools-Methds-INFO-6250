@@ -1,25 +1,13 @@
-# Recipe Single-Page-Application
+# Recipe Single-Page Web Application
 
-* start from the up-to-date master branch (`git checkout master; git pull origin master`)
-* Create a feature branch named 'exam2' (`git checkout -b exam2`)
-* modify the `questions.md` file to have the answers required
-* Add any files necessary to create the application below
-* add, commit, and push the branch to github
-* Create a PR to merge to master
-* Be sure to include the reviewer(s)
-* Due by 11:59pm (PT) Sun Jul 5
+## Steps to regenerate the project
+* Clone the repository and open the `Recipe-App` directory
+* Run your application with `npm install`, `npm start`
+* The application will run on http://localhost:3000/ in the browser
 
 ## Goal and Requirements
 
-* Did you remember the above requirement about `questions.md`?
-
-You will create a recipe storage and search website, along with the services necessary to support it.
-
 The application will be a single-page application. (which means only one page load!)  
-
-I will be able to install, build, and run your application with `npm install`, `npm start`
-* You will have to create the necessary `scripts` section in `package.json`
-* Hint: It is good to test that this works!
 
 From the main screen when a user loads the application:
 * There is an option to login, but they are not required to login to view
@@ -88,19 +76,3 @@ From the main screen when a user loads the application:
 * You may add icons and background images but there is no requirement to do so
 * You may use `express`, `cookie-parser`, `uuid`, and any other modules that have been used in class
 
-## Restrictions
-* You must provide meaningful, and where applicable, ACTIONABLE error messages for your user on the page (for service calls)
-* You should use no external libraries of any kind save for those explicitly allowed
-* Do not use React
-* Your JS, HTML, and CSS files must uphold the best practices from class (some, but not all, are listed below)
-* You may not use floats to do more than manage flowing text with images
-* You may not use HTML tables or CSS table layouts
-* Do not have any files in your PR except for the exam (no files from other assignments, for example)
-* Do not use var
-* Do not use alert
-* Do not use terrible variable names
-* Do not have console.log debugging messages or commented out code
-* The only permitted client-side storage is a single cookie to track login
-* Do not use window.location or other redirects
-* You may not use CSS preprocessors, minifiers, or other tools to modify your CSS
-* There should only be a single page load
