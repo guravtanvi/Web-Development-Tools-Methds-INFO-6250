@@ -1,3 +1,12 @@
+ ## Steps to Regenerate this project
+ 
+ * Download the repository
+ * Go to `Word Guessing Game` folder
+ * Run `npm install` and the application will be ready to use
+ * Run `node server.js` which will begin the server
+ * Open 'http://localhost:3000' in browser
+ 
+
  ## Goal and Requirements
 
 The application is a game to guess a word.
@@ -16,6 +25,9 @@ The User will enter a word, and the page will do one of:
   * This list will be scrollable if it cannot fit in the space available
 * The game will show effort to make it visually attractive and usable.
 
+![Image](MainPage.png)
+
+
 ### Logic
 * The game will use a `words.js` that exports an array of valid words.
 
@@ -33,8 +45,7 @@ The User will enter a word, and the page will do one of:
 
  `function compare( word, guess ) {  
     let match = 0;
-    const letterCount = {};
-
+    const letterCount = {}; 
     for( let letter of word.toLowerCase() ) {
         letterCount[letter] = letterCount + 1 || 1;
     }
@@ -44,12 +55,11 @@ The User will enter a word, and the page will do one of:
             match += 1;
         }
     }
-    return match;
-}`
+    return match; }`
 
 * The server will console.log the current secret word at the start of a game with a given game id.  The client should never know the secret word until it is guessed. 
 
- ![Image](Commandline.png)
+![Image](Commandline.png)
 
   * Hint: the server should send a random id to the client.  The server will be able to match the id to a word, but the client should not be able to.
   * Hint: The page will have to send this same secret id to the server on every request. This can be done with a hidden input field or a query parameter.
@@ -69,12 +79,4 @@ If `words.js` has the words "TEA, EAT, TEE, PEA, PET, APE" and the game selects 
 * tee will respond with 2 matches and increment the turn counter then allow a new guess
 * EAT will respond with 3 matches and increment the turn counter then allow a new guess
 * TEA will respond that they have won the game in however many turns and allow them to start a new game with a new randomly selected word from the list
-
-## Steps to Regenerate this project
- 
- * Download the repository
- * Go to `Word Guessing Game` folder
- * Run `npm install` and the application will be ready to use
- * Run `node server.js` which will begin the server
- * Open 'http://localhost:3000' in browser
 
