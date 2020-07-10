@@ -36,6 +36,8 @@ From the main screen when a user loads the application:
   * This option is only shown for logged in users
 * If a logged in user manually reloads the page, the page should show them as logged in
   * This should be done via a service call result, NOT by checking `document.cookies`
+  
+  ![Image](User-Interface.png)
 
 ### Login Module
 * They must provide a username to login
