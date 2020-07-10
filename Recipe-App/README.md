@@ -3,7 +3,7 @@
 ## Steps to regenerate the project
 * Clone the repository and open the `Recipe-App` directory
 * Run your application with `npm install`, `npm start`
-* The application will run on http://localhost:3000/ in the browser
+* The application will run on `http://localhost:3000/ in the browser
 
 ## Goal and Requirements
 
@@ -37,21 +37,21 @@ From the main screen when a user loads the application:
 * If a logged in user manually reloads the page, the page should show them as logged in
   * This should be done via a service call result, NOT by checking `document.cookies`
 
-### Login
+### Login Module
 * They must provide a username to login
 * No password
 * username "dog" is treated as a bad login
 * Show useful error messages if a login is denied
 
-### Logout 
+### Logout Module
 * They will see the Home screen after logging out
 * Another user can log in afterwards without requiring a new page load
 
-### Recipe Details
+### Recipe Details Module
 * Displays the author, title, ingredients list, and instructions for the selected recipe
 * You can click a "Return to Home" link to return to the Home Page
 
-### New Recipe
+### New Recipe Module
 * Displays a form to enter the title, ingredients list, and instructions for a new recipe
 * The ingredients list is a single textarea field to enter the data
 * The instructions list a single textarea field to enter the data
