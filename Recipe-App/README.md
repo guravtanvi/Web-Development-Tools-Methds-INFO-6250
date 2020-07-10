@@ -3,7 +3,7 @@
 ## Steps to regenerate the project
 * Clone the repository and open the `Recipe-App` directory
 * Run your application with `npm install`, `npm start`
-* The application will run on `http://localhost:3000/ in the browser
+* The application will run on `http://localhost:3000/` in the browser
 
 ## Goal and Requirements
 
