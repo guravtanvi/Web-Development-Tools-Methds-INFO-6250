@@ -4,7 +4,7 @@
  * Go to `Word Guessing Game` folder
  * Run `npm install` and the application will be ready to use
  * Run `node server.js` which will begin the server
- * Open 'http://localhost:3000` in browser
+ * Open `http://localhost:3000` in browser
  
 
  ## Goal and Requirements
