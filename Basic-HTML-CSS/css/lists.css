@@ -1,0 +1,63 @@
+/* Applying style for main id element for both cat.html and student.html */
+
+#star-app {
+    width: 800px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* Applying font Sans-Serif to whole page */
+
+body {
+  font-family: Sans-Serif;
+  background-color: beige;
+}
+
+/* Rendering the lists without bullet points */
+
+ul.star-entities li {
+	list-style-type: none;
+	/*margin-right: 10px;*/
+	display: flex;
+	
+}
+
+/* Applying alternate background colors between slightly darker/lighter */
+
+li:nth-child(2n+1) {
+  background-color: #DDD598;
+}
+
+
+li:nth-child(2n) {
+  background-color: #F0E7A5;
+}
+
+
+h1{
+	padding: 5px;
+	display: flex;
+}
+ul {
+	padding: 23px;
+	border-radius: 10px;
+	border: 2px solid #9f9f9f54;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+
+.display-panel {
+	width: 800px;
+    height: 600px;
+	margin: 10px;
+	border-radius: 10px;
+    box-shadow: 2px 3px 20px 1px #e5e2e2;
+	/*border: 2px solid #9f9f9f54;*/
+	
+}
+
+
+
